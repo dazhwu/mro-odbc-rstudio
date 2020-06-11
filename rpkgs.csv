@@ -1,0 +1,15 @@
+Package
+devtools
+Rcpp
+odbc
+dplyr
+sqldf
+ggplot2
+data.table
+plm
+igraph
+curl
+reshape2
+caret
+stargazer
+network
