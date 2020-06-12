@@ -120,7 +120,8 @@ RUN apt-get update \
         build-essential \
         libxml2-dev \
         tzdata \
-        git
+  && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
        
 RUN   wget -q $RSTUDIO_URL \
   && gdebi --option=APT::Get::force-yes=1,APT::Get::Assume-Yes=1 -n rstudio-server-*-amd64.deb \
