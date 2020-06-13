@@ -12,7 +12,7 @@ FROM ubuntu:16.04
 RUN apt-get update -qq \
 	&& apt-get dist-upgrade -y \
 	&& apt-get install -y make gcc gfortran libunwind8 gettext libssl-dev libcurl3-dev zlib1g libicu-dev \
-	wget curl tcl8.6 xvfb xauth apt-transport-https \
+	wget curl tcl8.6 xvfb xauth apt-transport-https libclang-dev \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
